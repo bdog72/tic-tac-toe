@@ -1,14 +1,30 @@
-@import 'utility';
+// @import 'utility';
+//
+// $base-text-size: 16px;
+// $base-font-family: sans-serif;
+//
+// html {
+//   text-size-adjust: 100%;
+// }
+//
+// body {
+//   @include font-smoothing(on);
+//   margin: 0;
+//   font: $base-text-size / 1 $base-font-family;
+// }
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+  h1, h2  {
+    text-align: center
+  }
 
-html {
-  text-size-adjust: 100%;
-}
+  table, tr, td {
+    border: 2px solid black
+  }
 
-body {
-  @include font-smoothing(on);
-  margin: 0;
-  font: $base-text-size / 1 $base-font-family;
-}
+  td {
+    width: 150px
+  }
+
+  tr {
+    height: 150px
+  }
