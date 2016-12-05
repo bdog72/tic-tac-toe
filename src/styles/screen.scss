@@ -13,24 +13,26 @@
 //   font: $base-text-size / 1 $base-font-family;
 // }
 
-  h1, h2  {
+  h1, p {
     text-align: center
   }
-
+  p {
+    font-size: 25px
+  }
   table, tr, td {
     border: 2px solid black
   }
 
   .tic {
-    font-size: 110px;
+    font-size: 75px;
     text-align: center;
     // padding: 10px;
     }
 
   td {
-    width: 150px
+    width: 100px
   }
 
   tr {
-    height: 150px
+    height: 100px
   }

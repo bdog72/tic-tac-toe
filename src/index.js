@@ -31,7 +31,7 @@ const winningCombos = [
 ]
 const checkForWinner = () => {
   for (let i = 0; i < winningCombos.length; i++) {
-    const winningCombo = winningCombo[i]
+    const winningCombo = winningCombos[i]
 
     let moves = winningCombo.map((position) => {
       return cells[position].textContent
@@ -44,7 +44,12 @@ const checkForWinner = () => {
   }
   return false
 }
-
+const reset = () => {
+  const cells = document.querySelectorAll('td')
+  for (let i = 0; i < cells.length; i++) {
+    cells[i].textContent = ''
+  }
+}
 document.addEventListener('DOMContentLoaded', main)
 
 if (module.hot) {
